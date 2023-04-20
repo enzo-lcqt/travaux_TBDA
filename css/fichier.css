@@ -6,6 +6,7 @@
         float: right;
         width: 342px;
         height: 76rem;
+        visibility: hidden;
     }
 
 
@@ -38,9 +39,6 @@ main {
     float: left;
 
 }
-
-
-
 
 
 .bg-header {
