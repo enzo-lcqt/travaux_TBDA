@@ -1,62 +1,62 @@
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    /* Styles */
-    
-    aside{
-        background-color: lightblue;
-        float: right;
-        width: 342px;
-        height: 76rem;
-        visibility: hidden;
-    }
-
-
-
+body{
+    margin:0px;
+    padding: 0px;
 }
-    
 
 img{
     width: 100%;
+    height:auto;
 }
-
-
-
-.banniere {
-    width: 100%;
-}
-
-
-p{
-    color:rgb(0, 0, 0);
-}
-
-
-
- a{
-    color: white;
- }
-
-main { 
-    width: calc(100% - 342px);
-    float: left;
-
-}
-
-
+/* en-tête de la page */
 .bg-header {
     color:rgb(255, 255, 255);
     background: #000;
     padding: 15px;
 }
-
-
+/* pied de page */
 .bg-footer {
     background-color: black;
-    padding: 15px
-        
+    padding: 15px        
  }
-
-
+/* contenu du body */
+ main {
+    width: 75%;
+    float: left;
+ }
+/* colonne sur la droite */
+ .aside{
+    background-color: lightblue;
+    float: right;
+    width: 25%;
+    height: 40rem;  
+}
+/* mettre les mentions legales , horaires 
+   et plan du site en pied de page */
 footer {
     clear: both;
 }
- 
+/* contient les changements de la page entre 0 et 768px */
+@media screen and (max-width: 768px){
+
+    .aside{
+        visibility: hidden;
+        display: none;       /* désactive la colonne quand on rentre en 0 et 768px */
+        width: 0;
+        height: 0;
+    }
+
+   .bg-footer{
+    display: flex;
+     flex-direction: column;   /* mets les mentions legales, horaires et plan du site en colonne a la place de ligne entre 0 et 768px*/
+   }
+
+   .bg-header{
+    display: flex;
+    flex-direction: column; /* mets l'en-tête en colonne a la place de ligne entre 0 et 768px*/
+   }
+
+   .texte{
+     font-size: 2em; /* aggrandis le texte quand on reduit la page entre 0 et 768px*/
+   }
+
+}
