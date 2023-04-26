@@ -3,6 +3,16 @@ body{
     padding: 0px;
 }
 
+.logo{
+width: 250px;
+}
+
+.jardin{
+    
+    text-align: center;
+}
+
+
 img{
     width: 100%;
     height:auto;
