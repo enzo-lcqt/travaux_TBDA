@@ -3,44 +3,73 @@ body{
     padding: 0px;
 }
 
+.logo{
+width: 250px;
+}
+
+.jardin{
+    
+    text-align: center;
+}
+
+
 img{
     width: 100%;
     height:auto;
 }
+
 /* en-tête de la page */
 .bg-header {
     color:rgb(255, 255, 255);
     background: #000;
     padding: 15px;
 }
+
 /* pied de page */
 .bg-footer {
     background-color: black;
     padding: 15px        
  }
+
 /* contenu du body */
  main {
     width: 75%;
     float: left;
  }
+
 /* colonne sur la droite */
  .aside{
     background-color: lightblue;
     float: right;
     width: 25%;
     height: 40rem;  
+    display: flex;
 }
+
 /* mettre les mentions legales , horaires 
    et plan du site en pied de page */
 footer {
     clear: both;
 }
+
+article{
+    display: flex;
+
+}
+
+a {
+    color: aliceblue;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
 /* contient les changements de la page entre 0 et 768px */
 @media screen and (max-width: 768px){
 
     .aside{
         visibility: hidden;
-        display: none;       /* désactive la colonne quand on rentre en 0 et 768px */
+        display: none;       /*désactive la colonne quand on rentre en 0 et 768px */
         width: 0;
         height: 0;
     }
@@ -58,6 +87,7 @@ footer {
    .texte{
      font-size: 2em; /* aggrandis le texte quand on reduit la page entre 0 et 768px*/
    }
+
 
    main {
     width: 100%;
