@@ -59,4 +59,7 @@ footer {
      font-size: 2em; /* aggrandis le texte quand on reduit la page entre 0 et 768px*/
    }
 
+   main {
+    width: 100%;
+   }
 }
