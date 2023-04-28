@@ -1,16 +1,19 @@
-var bouton1= document.getElementById("Id_btn1");
-bouton1.addEventListener("click",clickbtn1);
+let a = "100";
+let a1 = "Ceci est une chaîne de caractères : ";
+let phrase = "" + a1 + "" + a;
+console.log(phrase);
 
-function clickbtn1(){
-    var a="100"
-    alert("Ceci est une chaine de caractères: "+a);
-}
+let b = 100;
+b--;
+console.log(b);
 
-var bouton2= document.getElementById("Id_btn2");
-bouton2.addEventListener("click",clickbtn2);
+let c = 1;
+let c2 = Number(c) + Number(a);
+console.log(c2);
 
-function clickbtn2(){
-    var b="100"
-    b=x--
-    alert("operateur de décrementation : "+b);
+let bool = false;
+if(bool){
+    console.log("le booléen est à true");
+}else{
+    console.log("le booléen est à false");
 }
