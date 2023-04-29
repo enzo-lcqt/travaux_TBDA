@@ -19,12 +19,29 @@ else{
     console.log("l'utilisateur est majeur")
 }
 
-nombre3 = parseInt(prompt("Veuillez saisir votre 1er nombre"))
-nombre4 = parseInt(prompt("Veuillez saisir votre 2eme nombre"))
-operateur = parseInt(prompt("Veuillez saisir votre opérateur"))
-if(isNaN(nombre3, nombre4)){
-    alert("Vous n'avez pas saisi de chiffre");
+var A = prompt("Veuillez saisir votre 1er nombre : ")
+var op = prompt("Veuillez saisir votre operateur : ")
+var B = prompt("Veuillez saisir votre 2eme nombre : ")
+
+switch (op) {
+   case '+' : resultat=parseFloat(A)+parseFloat(B); 
+   console.log(`${A} + ${B} = ${resultat}`);
+   break;
+   case '-' : resultat=A-B; 
+   console.log(`${A} - ${B} = ${resultat}`);
+   break;
+
+   case '*' : resultat=A*B; 
+   console.log(`${A} * ${B} = ${resultat}`);
+   break;
+
+   case '/' : resultat=A/B;
+             if(B!=0) 
+    console.log(`${A} / ${B} = ${resultat} `);
+            else{
+              console.log("La division par 0 est impossible");
+            }
+               
 }
-if(isNaN(operateur)){
-    alert("Vous n'avez pas saisi un opérateur correct")
-}
+
+
