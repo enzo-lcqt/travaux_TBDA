@@ -9,8 +9,6 @@ function produit(cube, calc){
     
 }
 
-
-
 function afficheImg(img){
 var imagejavascript = document.createElement("img");
 imagejavascript.src = "/exo_9/img/papillon.jpg";
@@ -18,5 +16,9 @@ document.body.appendChild(imagejavascript)
 }
 afficheImg("/exo_9/img/papillon.jpg")
 
-
-
+function strtok(str1, str2, n){
+    var phrase = str1.split(str2)
+    console.log(phrase[n]);
+}
+str1 = "robert ;dupont ;amiens ;80000"
+strtok(str1, ";", 2)
