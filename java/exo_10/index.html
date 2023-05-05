@@ -8,10 +8,36 @@
 </head>
 <body>
     
-    
+    <div class="container">
+        <table id="mainTab" class="table">
+            <thead class="thead-dark">
+                <tr style="font-size: 12px;">
+                <th scope="col">Tableau<th>
+                </tr>
+            </thead>
+        
+            <tbody id="body">
+                <tr>
+                    <td>Voici vos choix</td>
+                </tr>
+            </tbody>
 
-  
-
-    <script src="/exo_10/script.js"></script>
-</body>
+            <tbody class="initule">
+                <form onsubmit="AddElement(event);">
+                <tr>
+                    <td>
+                        <label class="initule" for="plat">Plat</label>
+                        <input type="text" id="plat" name="plat" class="champ">
+                    </td>
+                </tr>
+                <tr>
+                    <td><button value="submit">Ajouter</button></td>
+                </tr>
+                </form>
+            </tbody>
+        </table>
+        </div>
+        <script src="/exo_10/script.js"></script>
+    </body>
 </html>
+        
