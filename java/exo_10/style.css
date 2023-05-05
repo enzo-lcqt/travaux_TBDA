@@ -4,3 +4,13 @@ table, caption, th, td {
     
     }
     
+tbody{
+    color: white;
+    background-color: black;
+}
+.thead-dark{
+    background-color: red;
+}
+.initule{
+    background-color: aqua;
+}

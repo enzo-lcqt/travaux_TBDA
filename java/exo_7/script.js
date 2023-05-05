@@ -36,7 +36,7 @@ switch (op) {
    break;
 
    case '/' : resultat=A/B;
-             if(A/B!=0) 
+             if(A&B!=0) 
     console.log(`${A} / ${B} = ${resultat} `);
             else{
               console.log("La division par 0 est impossible");
