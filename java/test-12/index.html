@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/test-12/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <table id="mainTab" class="table">
+            <thead class="thead-dark">
+                <tr style="font-size: 12px;">
+                <th scope="col">Tableau<th>
+                </tr>
+            </thead>
+        
+            <tbody id="body">
+                <tr>
+                    <td>Voici vos valeurs</td>
+                </tr>
+            </tbody>
+
+            <tbody class="initule">
+                <form onsubmit="AddElement(event);">
+                <tr>
+                    <td>
+                        <label class="initule" for="plat">saisi :</label>
+                        <input type="text" id="plat" name="plat" class="champ">
+                    </td>
+                </tr>
+                <tr>
+                    <td><button value="submit">Ajouter</button></td>
+                </tr>
+                </form>
+            </tbody>
+        </table>
+        </div>
+<br>
+<table id="mainTab" class="table">
+    <thead class="thead-dark">
+        <tr style="font-size: 12px;">
+        <th scope="col">Tableau<th>
+        </tr>
+    </thead>
+
+        <tbody id="body">
+            <tr>
+                <td>Voici la moyenne</td>
+            </tr>
+        </tbody>
+
+        <tbody class="calc">
+            <form onsubmit="AddElement1(event);">
+            <tr>
+                <td>
+                    <label class="calc" for="moyenne">saisi :</label>
+                    <input type="text" id="moyenne" name="moyenne" class="moyenne">
+                </td>
+            </tr>
+            <tr>
+                <td><button moyenne="moyenne">Ajouter</button></td>
+            </tr>
+            </form>
+        </tbody>
+    </table>
+    <script src="/test-12/script.js"></script>
+</body>
+</html>
