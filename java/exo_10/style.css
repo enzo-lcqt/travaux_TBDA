@@ -14,3 +14,13 @@ tbody{
 .initule{
     background-color: aqua;
 }
+button{
+    background-color: yellow;
+    color: green;
+}
+input{
+    background-color: grey;
+}
+label{
+    color: darkviolet;
+}
