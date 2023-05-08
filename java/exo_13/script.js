@@ -1,3 +1,2 @@
-alert("Coucou !");
-   console.log("Ah que Coucou !");
-   document.write("Mon 1er script");
+alert("<h2>Coucou !</h2>");
+document.write('<h1>Titre de la page</h1>');
