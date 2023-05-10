@@ -35,7 +35,7 @@ n=prompt("donnez un nombre")
 multiplication(n)
 
 //exo3
-let tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
+let tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane<br><br>"];
 
 
 let trouve = true;
@@ -62,3 +62,35 @@ let index=tab.indexOf(Prenom)
          break;
     }
 }document.write(tab)
+
+//exo4
+let pu = prompt("entrez un prix");
+let qtecom = prompt("entez le nombre de quantite");
+let tot = pu*qtecom
+document.write("le prix total(produit+quantité) est de : "+tot+"€<br>")
+
+//remise
+if(tot<=100){ 
+      rem=0
+    }
+else if((tot>=100)&&(tot<=200)){
+}      
+else if(tot>200){
+      rem=0.1
+    }
+totrem = tot-(tot*rem)
+document.write("le prix(produit+quantité) avec la remise est de : "+totrem+"<br>")
+
+//port
+let port = 0
+if(totrem>500){
+    port=0
+}else if(totrem<=500){
+    port=totrem*0.2
+}
+if(port>6){
+     port = totrem*0.2
+    }
+else if(port<6)
+port=6
+document.write("le total de la commande : "+totrem+"€<br>"+"plus les frais de port sont de : "+port+"€<br>"+"le total est de : "+(port+totrem)+"€")
