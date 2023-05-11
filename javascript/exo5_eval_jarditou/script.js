@@ -29,54 +29,64 @@ if (nom === ""){
 }
 // prenom
 if (prenom === ""){
-    prenom_error.innerHTML ="veuillez entrez votre nom"
+    prenom_error.innerHTML ="veuillez entrez votre nom";
+    prenom_error.style.color="red";
     valid = false;
 }
 // date
 if (date === ""){
-    date_error.innerHTML = "veuillez entre une date"
+    date_error.innerHTML = "veuillez entre une date";
+    date_error.style.color="red";
     valid = false;
 }
 // adresse
 if (adresse === ""){
-    adresse_error.innerHTML = "veuillez entrez votre adresse"
+    adresse_error.innerHTML = "veuillez entrez votre adresse";
+    adresse_error.style.color="red";
     valid = false;
 }
 
 // ville
 if(ville === ""){
-    ville_error.innerHTML = "veuillez entrez votre ville"
+    ville_error.innerHTML = "veuillez entrez votre ville";
+    ville_error.style.color="red";
     valid = false;
 }
 
 // mail
 if(mail === ""){
-    mail_error.innerHTML = "veuillez entrez votre mail"
+    mail_error.innerHTML = "veuillez entrez votre mail";
+    mail_error.style.color="red";
     valid = false;
 } else if (!/\S+@\S+\.\S+/.test(mail)){
     mail_error.innerHTML = "veuillez entrez un mail valide";
+    mail_error.style.color="red";
     valid = false;
 }
 
 // demande
 if (demande === ""){
-    demande_error.innerHTML = "veuillez entrez votre demande"
+    demande_error.innerHTML = "veuillez entrez votre demande";
+    demande_error.style.color="red";
     valid = false;
 }
 
 
 // question
 if (question === ""){
-    question_error.innerHTML = "veuillez poser votre question"
+    question_error.innerHTML = "veuillez poser votre question";
+    question_error.style.color="red";
     valid = false;
 }
 
 //  code postal
 if (code === ""){
-    code_error.innerHTML = "veuillez entrez votre code postal"
+    code_error.innerHTML = "veuillez entrez votre code postal";
+    code_error.style.color="red";
     valid = false;
 }else if(!/^[0-9]{5}$/.test(code)){
-    code_error.innerHTML = "le code doit être de 5 chiffres"
+    code_error.innerHTML = "le code doit être de 5 chiffres";
+    code_error.style.color="red";
     valid = false;
 }
 
