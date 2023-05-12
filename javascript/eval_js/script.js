@@ -35,33 +35,30 @@ n=prompt("donnez un nombre")
 multiplication(n)
 
 //exo3
-let tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane<br><br>"];
+let box;
+let prenom = prompt("Veuillez saisir un prenom");
+
+const tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane" ,"<br>"];
+ 
+
+box = tab.indexOf(prenom);
+ 
+
+document.write(prenom+"<br>");
+while(box != -1){
+
+    tab.splice(box,1);
+    prenom = prompt("Veuillez saisir un prenom");
+    box = tab.indexOf(prenom);
+    tab.splice(box,1);
+    document.write("Hop un prénom de trouver<br>"+prenom+"<br>");
 
 
-let trouve = true;
 
-while (trouve==true){
-let Prenom=prompt("devinez le prénom")
-let index=tab.indexOf(Prenom)
-    if (index !== -1){
-        for (i=index ;i <tab.length -1;i++)
-        {
-            tab[i]=tab[i+1]  
-            tab[tab.length-1]="";
-        
-        }   
-        
-            document.write("bravo!!"+Prenom+" a été trouvé "+"<br><br>il reste : ")
-            trouve=false
-    }
-            
-    else 
-    {
-         document.write("ERREUR ce "+Prenom+" n'existe pas dans le tableau.<br><br>")
-         
-         break;
-    }
-}document.write(tab)
+} 
+    document.write("Ce prénom ne se trouve pas dans la liste <br>");
+    document.write("Voici la liste finale des prénoms restants a trouver : " +l);
+
 
 //exo4
 let pu = prompt("entrez un prix");
