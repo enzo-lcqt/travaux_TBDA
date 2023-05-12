@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/exo_16/style.css">
+</head>
+<body>
+    <h1>Vos coordonnées :</h1><p>
+    <h2>* Ces zones sont obligatoires pour envoyer le formulaire.</h2>
+	<form method="post">
+		<label for="societe">Société :</label>
+		<input type="text" name="societe" id="societe" required minlength="1">   <span>*</span><br><br>
+
+		<label for="personne">Personne à contacter :</label>
+		<input type="text" name="personne" id="personne" required minlength="1">    <span>*</span><br><br>
+
+		<label for="adresse">Adresse de l'entreprise :</label>
+		<input type="text" name="adresse" id="adresse"><br><br>
+
+		<label for="codepostal">Code postal :</label>
+		<input type="text" name="codepostal" id="codepostal" required pattern="[0-9]{5}">    <span>*</span><br><br>
+
+		<label for="ville">Ville :</label>
+		<input type="text" name="ville" id="ville" required minlength="1">    <span>*</span><br><br>
+
+		<label for="email">Email :</label>
+		<input type="email" name="email" id="email" required>    <span>*</span><br><br>
+
+		<label for="environnement">Environnement technique :</label>
+		<select name="environnement" id="environnement" onchange="Box()">
+			<option value="choisir">Choisir</option>
+			<option value="Access">Access</option>
+			<option value="Java">Java</option>
+			<option value="Delphi">Delphi</option>
+			 <option value="Windev">Windev</option>
+             <option value="Visual">Visual Basic</option>
+             <option value="Power">Power Builder</option>
+             <option value="Internet">Internet</option>
+             <option value="Intranet">Intranet</option>
+             <option value="Windows">Windows NT</option>
+             <option value="Unix">Unix</option>
+             <option value="SQL">SQL Server</option>
+             <option value="Oracle">Oracle</option>
+			<option value="Autre">Autre...</option>
+		</select><br><br>
+
+		<label for="autretechnique">Autre technique :</label>
+		<textarea name="autretechnique" id="autretechnique"></textarea><br><br>
+
+		<input type="submit" value="Envoyer">
+		<input type="reset" value="Annuler">
+	</form>
+
+
+    <script src="/exo_16/script.js"></script> 
+</body>
+</html>

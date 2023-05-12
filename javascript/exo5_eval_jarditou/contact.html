@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <img src="/assets/img/jarditou_logo.jpg" alt="Image" height="200" width="400"><p> -->
+    La qualité depuis 70ans<p>
+    <ul>
+        <li><a href="index.html" title="page d'accueil">Accueil</a>
+            <p></p>
+        </li>
+        <li><a href="tableau.html" title="page de tableau">Tableau</a> </li>
+        <li><a href="contact.html" title="page de contact">Contact</a></li>
+    </ul>
+
+    <!-- <img src="assets/img/promotion.jpg"> <p> -->
+
+    <h1>Contact</h1>
+    <p>
+        <hr>
+
+
+    <form method="get" id="formulaire_contact" action="#" name="myForm">
+        * ces zones sont obligatoires
+        <fieldset>
+            Vos coordonnées<br>
+            <p>
+            <div>
+                <label for="nom">Votre nom*:</label>
+                <input type="text" name="nom" id="nom"><br>
+                <span id="nom_error"></span>
+            </div>
+
+            <div>
+                <label for="prenom">Votre prenom*:</label>
+                <input type="text" name="prenom" id="prenom"><br>
+                <p>
+                    <span id="prenom_error"></span>
+            </div>
+
+            <div>
+                sexe* :
+                <input type="radio" name="sexe" value="homme"> homme
+                <input type="radio" name="sexe" value="femme"> femme <br>
+                <p>
+            </div>
+
+            <div>
+                <label for="date">Date de naissance*:</label>
+                <input type="date" name="ddn" id="date"><br>
+                <span id="date_error"></span>
+            </div>
+
+            <div>
+                <label for="code">Code postal*:</label>
+                <input type="text" name="code" id="code"><br>
+                <span id="code_error"></span>
+            </div>
+
+            <div>
+                <label for="adresse">Adresse:</label>
+                <input type="text" name="adresse" id="adresse"><br>
+                <span id="adresse_error"></span>
+            </div>
+
+            <div>
+                <label for="ville">Ville:</label>
+                <input type="text" name="ville" id="ville"><br>
+                <span id="ville_error"></span>
+                <div>
+
+                    <div>
+                        <label for="mail">Email*:</label>
+                        <input type="email" name="email" id="mail"><br>
+                        <span id="mail_error"></span>
+                    </div>
+        </fieldset>
+
+        <fieldset>
+            votre demande<br>
+            <p>
+            <div>
+                <label for="demande">Sujet* :</label>
+                <select id="demande">
+                    <option value="" selected>Veuillez séléctionner un sujet </option>
+                    <option value="commandes" selected>Mes commandes</option>
+                    <option value="Question" selected>Question sur un produit</option>
+                    <option value="réclamation" selected>Réclamation</option>
+                    <option value="Autres" selected>Autres</option>
+                    <span id="demande_error"></span>
+            </div>
+            </select>
+            <p>
+
+            <div>
+                <label for="question">Votre question*:</label><input type="text" id="question"><br>
+                <span id="question_error"></span>
+                <p>
+                    <input type="checkbox" name="validation" value="yes">* J'accepte le traitement informatique de ce
+                    formulaire
+                <p>
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Annuler">
+                    
+            </div>
+        </fieldset>
+        <p>
+
+    </form>
+
+    <hr>
+    <ul>
+        <li>mentions legale</li>
+        <li>horaires</li>
+        <li>plan du site</li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,3 @@
-function validateForm(){
 let nom = document.getElementById("nom").value.trim()
 let prenom  = document.getElementById("prenom").value.trim()
 let date = document.getElementById("date").value.trim()
@@ -19,82 +18,80 @@ let demande_error = document.getElementById("demande_error");
 let question_error = document.getElementById("question_error");
 
 let valid = true;
+
+function validateForm(){
+
 // nom
 if (nom === ""){
-    nom_error.innerHTML = "veuillez entrez votre nom"
+    nom_error.innerHTML = "veuillez entrez votre nom";
+    nom_error.style.color="red";
     valid = false;
-}else {
-    nom_error.innerHTML = "";
 }
 // prenom
 if (prenom === ""){
-    prenom_error.innerHTML ="veuillez entrez votre nom"
-    valid = False
-}else {
-    prenom_error.innerHTML = "";
+    prenom_error.innerHTML ="veuillez entrez votre nom";
+    prenom_error.style.color="red";
+    valid = false;
 }
 // date
 if (date === ""){
-    date_error.innerHTML = "veuillez entre une date"
+    date_error.innerHTML = "veuillez entre une date";
+    date_error.style.color="red";
     valid = false;
-}else {
-    date_error.innerHTML = "";
 }
 // adresse
 if (adresse === ""){
-    adresse_error.innerHTML = "veuillez entrez votre adresse"
+    adresse_error.innerHTML = "veuillez entrez votre adresse";
+    adresse_error.style.color="red";
     valid = false;
-}else {
-    adresse_error.innerHTML = "";
 }
 
 // ville
 if(ville === ""){
-    ville_error.innerHTML = "veuillez entrez votre ville"
+    ville_error.innerHTML = "veuillez entrez votre ville";
+    ville_error.style.color="red";
     valid = false;
-}else {
-    ville_error.innerHTML= "";
 }
 
 // mail
 if(mail === ""){
-    mail_error.innerHTML = "veuillez entrez votre mail"
+    mail_error.innerHTML = "veuillez entrez votre mail";
+    mail_error.style.color="red";
     valid = false;
 } else if (!/\S+@\S+\.\S+/.test(mail)){
     mail_error.innerHTML = "veuillez entrez un mail valide";
+    mail_error.style.color="red";
     valid = false;
-}else {
-    mail_error.innerHTML = "";
 }
 
 // demande
 if (demande === ""){
-    demande_error.innerHTML = "veuillez entrez votre demande"
+    demande_error.innerHTML = "veuillez entrez votre demande";
+    demande_error.style.color="red";
     valid = false;
-}else {
-    demande_error.innerHTML = ""
 }
+
 
 // question
 if (question === ""){
-    question_error.innerHTML = "veuillez poser votre question"
+    question_error.innerHTML = "veuillez poser votre question";
+    question_error.style.color="red";
     valid = false;
-}else {
-    question_error.innerHTML = ""
 }
 
 //  code postal
 if (code === ""){
-    code_error.innerHTML = "veuillez entrez votre code postal"
+    code_error.innerHTML = "veuillez entrez votre code postal";
+    code_error.style.color="red";
     valid = false;
 }else if(!/^[0-9]{5}$/.test(code)){
-    code_error.innerHTML = "le code doit être de 5 chiffres"
+    code_error.innerHTML = "le code doit être de 5 chiffres";
+    code_error.style.color="red";
     valid = false;
-}else {
-    code_error.innerHTML = "";
 }
 
 if (valid){
     document.myForm.submit();
 }
 }
+validateForm();
