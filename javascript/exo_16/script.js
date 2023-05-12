@@ -1,4 +1,4 @@
-function updateTextArea() {
+function Box() {
 			var selectBox = document.getElementById("environnement");
 			var selectedValue = selectBox.options[selectBox.selectedIndex].value;
 			var textArea = document.getElementById("autretechnique");
