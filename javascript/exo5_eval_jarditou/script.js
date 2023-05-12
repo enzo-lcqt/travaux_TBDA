@@ -19,79 +19,75 @@ let question_error = document.getElementById("question_error");
 
 let valid = true;
 
-function validateForm(){
+let form = document.querySelector('#formulaire_contact');
+form.addEventListener('submit', (event) => {
 
-// nom
-if (nom === ""){
-    nom_error.innerHTML = "veuillez entrez votre nom";
-    nom_error.style.color="red";
-    valid = false;
-}
-// prenom
-if (prenom === ""){
-    prenom_error.innerHTML ="veuillez entrez votre nom";
-    prenom_error.style.color="red";
-    valid = false;
-}
-// date
-if (date === ""){
-    date_error.innerHTML = "veuillez entre une date";
-    date_error.style.color="red";
-    valid = false;
-}
-// adresse
-if (adresse === ""){
-    adresse_error.innerHTML = "veuillez entrez votre adresse";
-    adresse_error.style.color="red";
-    valid = false;
+if (!form.nom.value){
+    let error = document.querySelector('#nom_error')
+    event.preventDefault();
+    error.textContent = "le champ nom est requis"
+    error.style.color = "red"
 }
 
-// ville
-if(ville === ""){
-    ville_error.innerHTML = "veuillez entrez votre ville";
-    ville_error.style.color="red";
-    valid = false;
+if (!form.prenom.value){
+    let error = document.querySelector('#prenom_error')
+    event.preventDefault();
+    error.textContent = "le champ prenom est requis"
+    error.style.color = "red"
 }
 
-// mail
-if(mail === ""){
-    mail_error.innerHTML = "veuillez entrez votre mail";
-    mail_error.style.color="red";
-    valid = false;
-} else if (!/\S+@\S+\.\S+/.test(mail)){
-    mail_error.innerHTML = "veuillez entrez un mail valide";
-    mail_error.style.color="red";
-    valid = false;
+if (!form.date.value){
+    let error = document.querySelector('#date_error')
+    event.preventDefault();
+    error.textContent = "le champ date est requis"
+    error.style.color = "red"
 }
 
-// demande
-if (demande === ""){
-    demande_error.innerHTML = "veuillez entrez votre demande";
-    demande_error.style.color="red";
-    valid = false;
+if (!form.code.value){
+    let error = document.querySelector('#code_error')
+    event.preventDefault();
+    error.textContent = "le champ code est requis"
+    error.style.color = "red"
+}
+
+if (!form.adresse.value){
+    let error = document.querySelector('#adresse_error')
+    event.preventDefault();
+    error.textContent = "le champ adresse est requis"
+    error.style.color = "red"
+}
+
+if (!form.ville.value){
+    let error = document.querySelector('#ville_error')
+    event.preventDefault();
+    error.textContent = "le champ ville est requis"
+    error.style.color = "red"
+}
+
+if (!form.mail.value){
+    let error = document.querySelector('#mail_error')
+    event.preventDefault();
+    error.textContent = "le champ mail est requis"
+    error.style.color = "red"
+}
+
+if (!form.demande.value){
+    let error = document.querySelector('#demande_error')
+    event.preventDefault();
+    error.textContent = "le champ demande est requis"
+    error.style.color = "red"
+}
+
+if (!form.question.value){
+    let error = document.querySelector('#question_error')
+    event.preventDefault();
+    error.textContent = "le champ question est requis"
+    error.style.color = "red"
 }
 
 
-// question
-if (question === ""){
-    question_error.innerHTML = "veuillez poser votre question";
-    question_error.style.color="red";
-    valid = false;
-}
 
-//  code postal
-if (code === ""){
-    code_error.innerHTML = "veuillez entrez votre code postal";
-    code_error.style.color="red";
-    valid = false;
-}else if(!/^[0-9]{5}$/.test(code)){
-    code_error.innerHTML = "le code doit être de 5 chiffres";
-    code_error.style.color="red";
-    valid = false;
-}
 
-if (valid){
-    document.myForm.submit();
-}
-}
-validateForm();
+ }
+ )
+// validateForm();
