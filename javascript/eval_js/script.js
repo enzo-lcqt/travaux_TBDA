@@ -57,14 +57,14 @@ while(box != -1){
 
 } 
     document.write("Ce prénom ne se trouve pas dans la liste <br>");
-    document.write("Voici la liste finale des prénoms restants a trouver : " +l+"<br>");
+    document.write("<br>Voici la liste finale des prénoms restants a trouver : " +l+"<br>");
 
 
 //exo4
 let pu = prompt("entrez un prix");
 let qtecom = prompt("entez le nombre de quantite");
 let tot = pu*qtecom
-document.write("le prix total(produit+quantité) est de : "+tot+"€<br>")
+document.write("<br>le prix total(produit+quantité) est de : "+tot+"€<br>")
 
 //remise
 if(tot<=100){ 
