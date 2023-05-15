@@ -22,17 +22,13 @@ document.write("Nombre de personnes entre 20 et 40 ans : " + nbEntre20et40+"<br>
 document.write("Nombre de personnes de plus de 40 ans : " +nbPlus40+"<br><br>");
 
 //exo2
-n=prompt("donnez un nombre")
-    function multiplication(n)
-{
-    for(i=0;i <= 10;i++)
-{
-    let d= (n*i)
+let n = parseInt(prompt("entrez un nombre"));
+let message = "";
 
-    document.write(n+"x"+i+"="+d+"<br><br>")
+for(let i = 1;i<=10;i++){
+    message +=n+"x"+i+"="+(n*i)+"\n";
 }
-}
-multiplication(n)
+alert(message)
 
 //exo3
 let box;
@@ -60,7 +56,7 @@ while(box != -1){
     document.write("<br>Voici la liste finale des prénoms restants a trouver : " +l+"<br>");
 
 
-//exo4
+// //exo4
 let pu = prompt("entrez un prix");
 let qtecom = prompt("entez le nombre de quantite");
 let tot = pu*qtecom
