@@ -4,8 +4,8 @@
 
 <head>
 
-
-
+<title>contact</title>
+</head>
 
 <body>
 
@@ -17,7 +17,7 @@
         <li><a href="contact.html" title="page de contact">Contact</a></li>
         </ul>
     
-        <img src="assets/img/promotion.jpg"> <p>
+        <img src="assets/img/promotion.jpg" alt="Image"> <p>
     
     <h1>Contac</h1><p>
     <hr>
@@ -29,16 +29,16 @@
     * ces zones sont obligatoires 
 <fieldset>
     Vos coordonnées<br><p>
-    <label for="nom">Votre nom*:</label><input type="text" name="nom"><br>
-    <label for="prenom">Votre prenom*:</label><input type="text" name="prenom"><br><p>
+    <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom"><br>
+    <label for="prenom">Votre prenom*:</label><input type="text" name="prenom" id="prenom"><br><p>
     sexe* :
     <input type="radio" name="sexe" value="homme"> homme
 <input type="radio" name="sexe" value="femme"> femme <br><p>
-    <label for="date">Date de naissance*:</label><input type="date" name="ddn" id="date"><br>
-    <label for="code">Code postal*:</label><input type="text" name="code"><br>
-    <label for="adresse">Adresse:</label><input type="text" name="adresse"><br>
-    <label for="ville">Ville:</label><input type="text" name="ville"><br>
-    <label for="?">Email*:</label><input type="email" name="email"><br>
+    <label for="date">Date de naissance*:</label><input type="text" name="ddn" id="date"><br>
+    <label for="code">Code postal*:</label><input type="text" name="code" id="code"><br>
+    <label for="adresse">Adresse:</label><input type="text" name="adresse" id="adresse"><br>
+    <label for="ville">Ville:</label><input type="text" name="ville" id="ville"><br>
+    <label for="?">Email*:</label><input type="text" name="email" id="?"><br>
 </fieldset>
 
 
@@ -46,14 +46,14 @@
 <fieldset>
  votre demande<br><p>
     <label for="demande">Sujet* :</label>
-    <select id="demande">
+    <select id="demande" >
         <option value="" selected>Veuillez séléctionner un sujet </option>
-        <option value="commandes" selected>Mes commandes</option> 
-        <option value="Question" selected>Question sur un produit</option>
-        <option value="réclamation" selected>Réclamation</option>  
-        <option value="Autres" selected>Autres</option>   
+        <option value="commandes" >Mes commandes</option> 
+        <option value="Question" >Question sur un produit</option>
+        <option value="réclamation" >Réclamation</option>  
+        <option value="Autres" >Autres</option>   
     </select><p>
-        <label for="question">Votre question*:</label><input type="text"><p>
+        <label for="question" >Votre question*:</label><input type="text" id="question"><p>
 <input type="checkbox" name="validation" value="yes">* J'accepte le traitement informatique de ce formulaire<p>
         <input type="submit" value="Envoyer">
         <input type="submit" value="Annuler">
